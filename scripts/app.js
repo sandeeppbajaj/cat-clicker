@@ -1,9 +1,21 @@
-var count1 = 0;
-var countElem1 = document.getElementById('click-count-1');
-countElem1.innerHTML = count1;
+var count = [0,0];
+var countElems = [];
+
+for(var i=0;i<2;i++){
+  countElems.push(document.getElementById('click-count-'+(i+1)));
+  countElems[i].innerHTML = count[i];
+}
+
 
 var imageElem1 = document.getElementById('cat-img-1');
+var imageElem2 = document.getElementById('cat-img-2');
+
 imageElem1.addEventListener('click',function(){
-  count1++;
-  countElem1.innerHTML = count1;
+  count[0]++;
+  countElems[0].innerHTML = count[0];
+},false);
+
+imageElem2.addEventListener('click',function(){
+  count[1]++;
+  countElems[1].innerHTML = count[1];
 },false);
