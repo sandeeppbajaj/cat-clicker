@@ -1,0 +1,11 @@
+.cat-list-container{
+  display: inline-block;
+  width: 15%;
+  float: left;
+}
+
+.cat-display-container{
+  display: inline-block;
+  width: 80%;
+  float: right;
+}

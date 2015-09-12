@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Cat Clicker</title>
+    <link rel="stylesheet" href="styles/app.css" media="screen">
   </head>
   <body>
-    <div>
-      <img id="cat-img-1" src="images/cat-1.jpg" alt="First Cat Image" />
-      <p>
-        Number of clicks: <span id="click-count-1"></span>
-      </p>
+    <div class="cat-list-container">
+      <ul id="cat-list" class="cat-list">
+      </ul>
     </div>
-    <div>
-      <img id="cat-img-2" src="images/cat-2.jpg" alt="Second Cat Image" />
-      <p>
-        Number of clicks: <span id="click-count-2"></span>
-      </p>
+
+    <div class="cat-display-container">
+      <h1 id="cat-name"></h1>
+      <div>
+        <img id="cat-img" src="" alt="Cat Image" width="640" height="425" onclick="javascript:incrementCount()" />
+        <p>
+          Number of clicks: <span id="click-count"></span>
+        </p>
+      </div>
     </div>
+
     <script src="scripts/app.js" charset="utf-8"></script>
   </body>
 </html>
